@@ -1,10 +1,17 @@
+
 name: RaceDay Part 2 CI
 
 on:
   push:
-    branches: [main, master]
+    branches:
+      - main
+      - master
+
   pull_request:
-    branches: [main, master]
+    branches:
+      - main
+      - master
+
   workflow_dispatch:
 
 jobs:
@@ -20,8 +27,14 @@ jobs:
         with:
           dotnet-version: '10.0.x'
 
+      - name: Display .NET version
+        run: dotnet --version
+
       - name: Restore dependencies
         run: dotnet restore RaceDay.Api.slnx
+
+      - name: Clean solution
+        run: dotnet clean RaceDay.Api.slnx --configuration Release
 
       - name: Build solution
         run: dotnet build RaceDay.Api.slnx --configuration Release --no-restore
