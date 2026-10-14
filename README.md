@@ -491,19 +491,11 @@ A green check indicates that the configured workflow steps succeeded for that co
 
 ### CI Screenshot
 
-Add a genuine screenshot of the successful GitHub Actions run to the repository, for example:
+<img width="706" height="283" alt="Screenshot 2026-10-14 213927" src="https://github.com/user-attachments/assets/57fa2a77-42fb-4b17-a7fe-4b1d55ee9089" />
 
-```text
-docs/CI_Green_Build.png
-```
+<img width="943" height="485" alt="Screenshot 2026-10-14 214026" src="https://github.com/user-attachments/assets/88121df1-2ce6-42a8-b14d-b0808f7595c5" />
 
-Then include it below.
-
-Replace the image path if your screenshot is stored elsewhere.
-
-![RaceDay Part 2 GitHub Actions successful build](docs/CI_Green_Build.png)
-
-*Figure 1: RaceDay Part 2 CI result. Add the actual screenshot after the workflow passes.*
+<img width="930" height="414" alt="Screenshot 2026-10-14 214003" src="https://github.com/user-attachments/assets/5262b06b-068a-4444-a897-ab1a52f874f7" />
 
 ## 13. Error Handling and Validation
 
