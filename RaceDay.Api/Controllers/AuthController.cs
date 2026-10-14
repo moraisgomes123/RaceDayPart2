@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Identity;
+
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using RaceDay.Api.Data;
@@ -28,7 +29,12 @@ public class AuthController : ControllerBase
         var email = dto.Email.Trim().ToLowerInvariant();
 
         if (await _db.Users.AnyAsync(x => x.Email == email))
-            return Conflict(new { message = "Email already registered." });
+        {
+            return Conflict(new
+            {
+                message = "Email already registered."
+            });
+        }
 
         var user = new User
         {
@@ -40,7 +46,10 @@ public class AuthController : ControllerBase
             CreatedAt = DateTime.UtcNow
         };
 
-        user.PasswordHash = _hasher.HashPassword(user, dto.Password);
+        user.PasswordHash = _hasher.HashPassword(
+            user,
+            dto.Password
+        );
 
         _db.Users.Add(user);
         await _db.SaveChangesAsync();
@@ -61,16 +70,54 @@ public class AuthController : ControllerBase
         var email = dto.Email.Trim().ToLowerInvariant();
 
         var user = await _db.Users.SingleOrDefaultAsync(
-            x => x.Email == email);
+            x => x.Email == email
+        );
 
         if (user == null)
-            return Unauthorized(new { message = "Invalid email or password." });
+        {
+            return Unauthorized(new
+            {
+                message = "Invalid email or password."
+            });
+        }
 
-        var verification = _hasher.VerifyHashedPassword(
-            user, user.PasswordHash, dto.Password);
+        PasswordVerificationResult verification;
+
+        try
+        {
+            verification = _hasher.VerifyHashedPassword(
+                user,
+                user.PasswordHash,
+                dto.Password
+            );
+        }
+        catch (FormatException)
+        {
+            // The stored password hash is malformed.
+            return Unauthorized(new
+            {
+                message = "Invalid email or password."
+            });
+        }
 
         if (verification == PasswordVerificationResult.Failed)
-            return Unauthorized(new { message = "Invalid email or password." });
+        {
+            return Unauthorized(new
+            {
+                message = "Invalid email or password."
+            });
+        }
+
+        // Update older hashes if the hasher recommends it.
+        if (verification == PasswordVerificationResult.SuccessRehashNeeded)
+        {
+            user.PasswordHash = _hasher.HashPassword(
+                user,
+                dto.Password
+            );
+
+            await _db.SaveChangesAsync();
+        }
 
         return Ok(new
         {
