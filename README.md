@@ -433,6 +433,21 @@ The API should return suitable HTTP status codes.
 
 The exact response should be verified for each endpoint.
 
+
+<img width="863" height="455" alt="Screenshot 2026-10-14 152218" src="https://github.com/user-attachments/assets/fcd296c6-dbc4-4c07-bbde-dd0acc8cbe36" />
+
+<img width="941" height="535" alt="Screenshot 2026-10-14 152012" src="https://github.com/user-attachments/assets/bb3d20be-4b82-41de-90f0-41b516d1030f" />
+
+<img width="934" height="496" alt="Screenshot 2026-10-14 152028" src="https://github.com/user-attachments/assets/01a19247-5408-4c08-bd5a-d61b8b67a872" />
+
+<img width="928" height="444" alt="Screenshot 2026-10-14 152048" src="https://github.com/user-attachments/assets/ad49bbfd-0a01-4776-a880-685cfcd18d1b" />
+
+<img width="561" height="272" alt="Screenshot 2026-10-14 152101" src="https://github.com/user-attachments/assets/3ecbe72f-439a-4f49-8bc8-c9c1f2d7cc76" />
+
+<img width="931" height="484" alt="Screenshot 2026-10-14 152112" src="https://github.com/user-attachments/assets/ce3e09a7-5409-4cce-b0f1-456c08a23301" />
+
+
+
 ## 11. Automated Tests
 
 RaceDay includes a separate xUnit test project named `RaceDay.Tests`.
