@@ -560,13 +560,13 @@ These improvements should only be marked as completed after they have been imple
 
 ## 16. GitHub Repository
 
-**Repository URL:** [Insert your RaceDay Part 2 GitHub repository URL here]
+https://github.com/moraisgomes123/RaceDayPart2
 
 The repository should contain the API source code, test project, workflow configuration and documentation required for the submission.
 
 ## 17. Video Demonstration
 
-**YouTube video:** [Insert your unlisted YouTube video URL here]
+https://www.youtube.com/watch?v=vX5R31mrAus
 
 The video should demonstrate the actual implementation and explain:
 
@@ -580,6 +580,7 @@ The video should demonstrate the actual implementation and explain:
 8. The GitHub Actions workflow and its result.
 
 Follow the video requirements provided by the lecturer, including any rules about voiceover and video visibility.
+
 
 ## 18. Conclusion
 
