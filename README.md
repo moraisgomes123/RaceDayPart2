@@ -313,21 +313,9 @@ Install the following software:
 - SQL Server Management Studio (SSMS), if using SSMS to manage the database.
 - Git, if cloning the repository.
 
-### 9.2 Clone the Repository
 
-Replace the placeholder below with the actual GitHub repository URL.
 
-```bash
-git clone YOUR_GITHUB_REPOSITORY_URL
-```
-
-Open the solution file:
-
-```text
-RaceDay.Api.slnx
-```
-
-### 9.3 Configure the Database Connection
+### 9.2 Configure the Database Connection
 
 Open the API project's configuration file and set the connection string to match your SQL Server instance.
 
@@ -493,6 +481,11 @@ The workflow performs these steps:
 4. Cleans and builds the solution.
 5. Runs the automated test suite.
 
+## RaceDay.Test screenshot
+
+<img width="589" height="297" alt="image" src="https://github.com/user-attachments/assets/48194878-e892-4886-adad-114c690198e8" />
+
+
 ### Checking the Workflow
 
 1. Push your changes to GitHub.
@@ -511,6 +504,11 @@ A green check indicates that the configured workflow steps succeeded for that co
 <img width="943" height="485" alt="Screenshot 2026-10-14 214026" src="https://github.com/user-attachments/assets/88121df1-2ce6-42a8-b14d-b0808f7595c5" />
 
 <img width="930" height="414" alt="Screenshot 2026-10-14 214003" src="https://github.com/user-attachments/assets/5262b06b-068a-4444-a897-ab1a52f874f7" />
+
+## All Workflow
+
+<img width="946" height="497" alt="Screenshot 2026-10-16 001355" src="https://github.com/user-attachments/assets/667faa2a-55df-4033-b609-675f6737e634" />
+
 
 ## 13. Error Handling and Validation
 
