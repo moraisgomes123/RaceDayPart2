@@ -587,3 +587,33 @@ RaceDay Part 2 develops the backend API for the RaceDay Event Management System.
 JWT authentication helps protect the API, while role-based authorisation controls access to management functions. Swagger supports manual API testing, xUnit supports automated validation tests, and GitHub Actions automates the build and test process.
 
 The project should be considered ready for submission only after the database schema, required endpoints, authorisation rules, automated tests, CI workflow and documentation have been verified against the assessment requirements.
+
+## References
+
+Microsoft (2026) *Tutorial: Create a controller-based web API with ASP.NET Core*. Microsoft Learn. Available at: https://learn.microsoft.com/en-us/aspnet/core/tutorials/first-web-api?view=aspnetcore-10.0 (Accessed: 16 October 2026).
+
+Microsoft (n.d.-a) *Entity Framework Core*. Microsoft Learn. Available at: https://learn.microsoft.com/en-us/ef/core/ (Accessed: 16 October 2026).
+
+Microsoft (n.d.-b) *Entity Framework Core for Beginners*. Microsoft Learn. Available at: https://learn.microsoft.com/en-us/shows/entity-framework-core-for-beginners/ (Accessed: 16 October 2026).
+
+Microsoft (n.d.-c) *C# documentation*. Microsoft Learn. Available at: https://learn.microsoft.com/en-us/dotnet/csharp/ (Accessed: 16 October 2026).
+
+Microsoft (n.d.-d) *SQL Server documentation*. Microsoft Learn. Available at: https://learn.microsoft.com/en-us/sql/ (Accessed: 16 October 2026).
+
+Microsoft (n.d.-e) *ASP.NET Core documentation*. Microsoft Learn. Available at: https://learn.microsoft.com/en-us/aspnet/core/ (Accessed: 16 October 2026).
+
+Freeman, A. (2023) *Pro ASP.NET Core 7: Develop Cloud-Ready Web Applications Using MVC, Blazor, and Razor Pages*. 10th edn. Berkeley, CA: Apress.
+
+Price, M.J. (2023) *C# 12 and .NET 8 – Modern Cross-Platform Development Fundamentals*. 8th edn. Birmingham: Packt Publishing.
+
+Skeet, J. (2019) *C# in Depth*. 4th edn. Shelter Island, NY: Manning Publications.
+
+Internet Engineering Task Force (IETF) (2015) RFC 7519: JSON Web Token (JWT). Available at: https://www.rfc-editor.org/rfc/rfc7519 (Accessed: 16 October 2026).
+
+GitHub (n.d.) Building and testing .NET. GitHub Docs. Available at: https://docs.github.com/en/actions/tutorials/build-and-test-code/net (Accessed: 16 October 2026).
+
+OWASP Foundation (n.d.) Password Storage Cheat Sheet. Available at: https://cheatsheetseries.owasp.org/cheatsheets/Password_Storage_Cheat_Sheet.html (Accessed: 16 October 2026).
+
+xUnit.net (n.d.) Getting started with xUnit.net. Available at: https://xunit.net/docs/getting-started/v2/getting-started (Accessed: 16 October 2026).
+
+OpenAPI Initiative (n.d.) OpenAPI Specification. Available at: https://spec.openapis.org/oas/latest.html (Accessed: 16 October 2026).
